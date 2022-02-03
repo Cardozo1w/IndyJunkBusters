@@ -61,6 +61,10 @@ img {
   display: block;
 }
 
+p, label, button{
+    font-size: 1.6rem;
+}
+
 .btn {
   background-color: #8cbc00;
   display: block;
@@ -281,6 +285,14 @@ img {
   grid-row: 2 / 3;
   color: #fff;
   padding: 5rem;
+}
+
+.texto-nosotros{
+    font-size: 1.6rem;
+}
+
+.texto-nosotros h2{
+    font-size: 4rem;
 }
 @media (min-width: 768px) {
   .texto-nosotros {
