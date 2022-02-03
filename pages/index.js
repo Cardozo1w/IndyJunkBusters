@@ -43,9 +43,9 @@ const Index = () => {
               <h2>About Us</h2>
               <p>
                 We are a small business who is skilled in many areas. We do junk
-                removal and hauling, residential and commercial cleaning,
-                flooring installation, general remodeling, and tree services. We
-                do more than the services listed. If you have an inquiry about
+                removal and haupng, residential and commercial cleaning,
+                flooring installation, general remodepng, and tree services. We
+                do more than the services psted. If you have an inquiry about
                 other services feel free to call or email us.
               </p>
             </div>
@@ -64,21 +64,21 @@ const Index = () => {
           </p>
           <div className="services">
             <ul>
-              <li>Junk Removal</li>
-              <li>Hauling Floor Instalation</li>
-              <li>Vinyk</li>
-              <li>Laminate</li>
+              <p>Junk Removal</p>
+              <p>Haupng Floor Instalation</p>
+              <p>Vinyk</p>
+              <p>Laminate</p>
             </ul>
             <ul>
-              <li>Tile</li>
-              <li>Demolition</li>
-              <li>Remodeling</li>
-              <li>Cleaning</li>
+              <p>Tile</p>
+              <p>Demoption</p>
+              <p>Remodepng</p>
+              <p>Cleaning</p>
             </ul>
             <ul>
-              <li>Residential</li>
-              <li>Commercial</li>
-              <li>Tree Services</li>
+              <p>Residential</p>
+              <p>Commercial</p>
+              <p>Tree Services</p>
             </ul>
           </div>
         </main>
