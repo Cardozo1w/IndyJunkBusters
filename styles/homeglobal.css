@@ -156,8 +156,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 0 10px 30px;
   font-size: 15px;
   font-weight: 500;
-  color: #fff;
   white-space: nowrap;
+  color: #000;
   transition: 0.3s;
 }
 .navbar a i, .navbar a:focus i {
@@ -166,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 5px;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #47b2e4;
+  color: #D94436;
 }
 .navbar .getstarted, .navbar .getstarted:focus {
   padding: 8px 20px;
@@ -204,13 +204,13 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   text-transform: none;
   font-weight: 500;
-  color: #0c3c53;
+  color: #343a40;
 }
 .navbar .dropdown ul a i {
   font-size: 12px;
 }
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #47b2e4;
+  color: #D94436;
 }
 .navbar .dropdown:hover > ul {
   opacity: 1;
@@ -241,7 +241,7 @@ h1, h2, h3, h4, h5, h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: #D94436;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -268,7 +268,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(40, 58, 90, 0.9);
+  background: rgb(90 40 40 / 90%);
   transition: 0.3s;
   z-index: 999;
 }
@@ -293,10 +293,10 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile a, .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #37517e;
+  color: rgb(24, 24, 24);
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #47b2e4;
+  color: #D94436;
 }
 .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
   margin: 15px;
@@ -323,7 +323,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
 }
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #47b2e4;
+  color: #D94436;
 }
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
@@ -470,7 +470,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #37517e;
+  color: #D94436;
 }
 .section-title h2::before {
   content: "";
@@ -488,7 +488,7 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #47b2e4;
+  background: #D94436;
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -875,7 +875,7 @@ section {
   transition: 0.3s;
 }
 .portfolio .portfolio-item .portfolio-info .preview-link:hover, .portfolio .portfolio-item .portfolio-info .details-link:hover {
-  color: #47b2e4;
+  color: #D94436;
 }
 .portfolio .portfolio-item .portfolio-info .details-link {
   right: 10px;
@@ -1204,8 +1204,8 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact .info {
-  border-top: 3px solid #47b2e4;
-  border-bottom: 3px solid #47b2e4;
+  border-top: 3px solid #D94436;
+  border-bottom: 3px solid #D94436;
   padding: 30px;
   background: #fff;
   width: 100%;
@@ -1213,11 +1213,11 @@ section {
 }
 .contact .info i {
   font-size: 20px;
-  color: #47b2e4;
+  color: #D94436;
   float: left;
   width: 44px;
   height: 44px;
-  background: #e7f5fb;
+  background: #fdf5f5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1229,13 +1229,13 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #37517e;
+  color: #D94436;
 }
 .contact .info p {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: #6182ba;
+  color: #e17d73;
 }
 .contact .info .email p {
   padding-top: 5px;
@@ -1258,17 +1258,17 @@ section {
   margin-right: 10px;
 }
 .contact .info .social-links a:hover {
-  background: #47b2e4;
+  background: #D94436;
   color: #fff;
 }
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #47b2e4;
+  background: #D94436;
   color: #fff;
 }
 .contact .php-email-form {
   width: 100%;
-  border-top: 3px solid #47b2e4;
-  border-bottom: 3px solid #47b2e4;
+  border-top: 3px solid #D94436;
+  border-bottom: 3px solid #D94436;
   padding: 30px;
   background: #fff;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
@@ -1333,7 +1333,7 @@ section {
   border-radius: 4px;
 }
 .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-  border-color: #47b2e4;
+  /* border-color: #18d26e; */
 }
 .contact .php-email-form input {
   height: 44px;
@@ -1341,16 +1341,28 @@ section {
 .contact .php-email-form textarea {
   padding: 10px 12px;
 }
-.contact .php-email-form button[type=submit] {
-  background: #47b2e4;
+.contact .php-email-form input[type=submit] {
+  background: #D94436;
   border: 0;
-  padding: 12px 34px;
+  padding: 0px 20px;
   color: #fff;
   transition: 0.4s;
   border-radius: 50px;
+  font-size: 16px;
 }
+
+.btn-acept {
+  background-color: #D94436 !important;
+  border: 0;
+  padding: 5px 15px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 7px;
+  font-size: 10px;
+}
+
 .contact .php-email-form button[type=submit]:hover {
-  background: #209dd8;
+  background: #f75b4d;
 }
 @-webkit-keyframes animate-loading {
   0% {

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 
 html {
   box-sizing: border-box;
@@ -14,6 +15,11 @@ body {
   font-size: 1.6rem;
   line-height: 2;
   margin: 0;
+}
+
+.bx-chevron-right {
+  color: #d94436;
+  font-weight: 700;
 }
 
 /* Globales */
@@ -61,8 +67,10 @@ img {
   display: block;
 }
 
-p, label, button{
-    font-size: 1.6rem;
+p,
+label,
+button {
+  font-size: 1.6rem;
 }
 
 .btn {
@@ -103,12 +111,35 @@ p, label, button{
 .nombre-sitio {
   margin-top: 1rem;
   text-align: center;
+  font-weight: 700;
 }
 .nombre-sitio span {
-  color: #037bc0;
+  color: #d94436;
 }
+
+.titulo-principal {
+  text-align: center;
+}
+
+.titulo-principal img {
+  margin: 0 auto;
+}
+
+@media (min-width: 380px) {
+  .titulo-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .titulo-principal img {
+    margin: 0;
+  }
+}
+
 .contenedor-navegacion {
   border-top: 0.1rem solid #e1e1e1;
+  border-bottom: 0.1rem solid #e1e1e1;
 }
 .nav-principal {
   padding: 2rem 0;
@@ -156,10 +187,51 @@ p, label, button{
   justify-content: center;
   flex-direction: column;
   color: #fff;
+  text-align: center;
+}
+
+.titulo-principal .truck {
+  width: 50px;
+  width: 50px;
+  position: absolute;
+  top: 35px;
+  right: 0;
+}
+
+@media (min-width: 420px) {
+  .titulo-principal .truck {
+    width: 90px;
+    height: 90px;
+    top: 15px;
+  }
+}
+
+@media (min-width: 650px) {
+  .titulo-principal .truck {
+    width: 130px;
+    height: 130px;
+    top: 10px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .titulo-principal .truck {
+    width: 200px;
+    height: 200px;
+    top: -23px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .titulo-principal .truck {
+    width: 200px;
+    height: 200px;
+    top: -10px;
+  }
 }
 
 .label {
-  background-color: #037bc0;
+  background-color: #d94436;
   text-align: center;
   font-size: 1.8rem;
   font-weight: 700;
@@ -229,7 +301,7 @@ p, label, button{
   font-size: 2rem;
 }
 .categoria a:hover {
-  background-color: #037bc0;
+  background-color: #d94436;
   color: #fff !important;
   border-bottom-right-radius: 1rem;
 }
@@ -247,8 +319,8 @@ p, label, button{
   background-image: linear-gradient(
       to bottom,
       transparent 50%,
-      #037bc0 50%,
-      #037bc0 100%
+      #d94436 50%,
+      #d94436 100%
     ),
     url(https://cardosolandings.com/images/interior.webp);
   background-position: center, top left;
@@ -261,8 +333,8 @@ p, label, button{
     background-image: linear-gradient(
         to right,
         transparent 50%,
-        #037bc0 50%,
-        #037bc0 100%
+        #d94436 50%,
+        #d94436 100%
       ),
       url(https://cardosolandings.com/images/interior.webp);
     background-position: left center;
@@ -287,12 +359,12 @@ p, label, button{
   padding: 5rem;
 }
 
-.texto-nosotros{
-    font-size: 1.6rem;
+.texto-nosotros {
+  font-size: 1.6rem;
 }
 
-.texto-nosotros h2{
-    font-size: 4rem;
+.texto-nosotros h2 {
+  font-size: 4rem;
 }
 @media (min-width: 768px) {
   .texto-nosotros {
@@ -382,7 +454,6 @@ p, label, button{
 .site-footer {
   border-top: 1px solid #e1e1e1;
   margin-top: 5rem;
-  padding-top: 5rem;
 }
 .site-footer h3 {
   margin-bottom: 0.5rem;
@@ -554,20 +625,65 @@ p, label, button{
   .services {
     display: flex;
     justify-content: space-evenly;
+    padding-left: 150px;
   }
 }
 
 .services ul {
   flex-basis: calc(33% - 1rem);
-  text-align: center;
+  /* text-align: center; */
 }
 
-.services ul p{
-    margin-bottom: 15px;
+.services ul p {
+  margin-bottom: 15px;
 }
-
 
 .contenido-principal p {
   font-size: 1.8rem;
   margin-bottom: 30px;
+}
+
+ .gallery h3{
+  text-align: center;
+}
+
+
+#galeria {
+  max-width: 900px;
+  max-height: 600px;
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+@media (min-width: 600px){
+  #galeria{
+    width: auto;
+  }
+}
+
+.gallery nav ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+}
+
+
+.gallery nav ul li a img {
+  width: 100px;
+  opacity: 50%;
+  transition: 0.3s;
+  filter: grayscale(50%);
+  height: 100%;
+}
+
+.gallery nav ul li a img:hover {
+  opacity: 100%;
+  margin-top: -5px;
+  filter: grayscale(0%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.gallery nav ul li a img:active {
+  transform: scale(0.8);
 }

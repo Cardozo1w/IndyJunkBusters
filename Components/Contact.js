@@ -1,9 +1,55 @@
 import React from "react";
+import { useForm, ValidationError } from "@formspree/react";
+import { useState } from "react";
+import { Button, Modal } from "react-bootstrap";
+import { useEffect } from "react";
+import axios from "axios";
 
 const Contact = () => {
+  const initialValues = {
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  };
+  const [show, setShow] = useState(false);
+  const [fields, setFields] = useState(initialValues);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  // const [state, handleSubmit] = useForm("xayvekwj");
+
+  // if (state.succeeded) {
+  //   console.log("Working...");
+  // }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const send = await axios.post("https://formspree.io/f/mqknpjzl", fields);
+    if (send.status === 200) {
+      handleShow();
+      setFields(initialValues);
+    }
+  };
+
+  const handleChange = (e) => {
+    setFields({ ...fields, [e.target.name]: e.target.value });
+  };
+
   return (
     <>
-      <section id="contact" className="contact">
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Message Sent</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Your message has been sent successfully</Modal.Body>
+        <Modal.Footer>
+          <Button className="btn-acept" onClick={handleClose}>
+            Accept
+          </Button>
+        </Modal.Footer>
+      </Modal>
+
+      <section id="contact" className="contact" id="contact">
         <div className="container">
           <div className="section-title">
             <h2>Contact</h2>
@@ -33,14 +79,14 @@ const Contact = () => {
                 <div className="phone">
                   <i className="bi bi-phone"></i>
                   <h4>Call:</h4>
-                  <p style={{marginBottom: 0}}>+1 (317) 657-0549</p>
+                  <p style={{ marginBottom: 0 }}>+1 (317) 657-0549</p>
                   <p>+1 (317) 992-9992</p>
                 </div>
               </div>
             </div>
 
             <div className="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-              <form action="" method="" role="" className="php-email-form">
+              <form onSubmit={handleSubmit} className="php-email-form">
                 <div className="row">
                   <div className="form-group col-md-6">
                     <label>Your Name</label>
@@ -49,7 +95,8 @@ const Contact = () => {
                       name="name"
                       className="form-control"
                       id="name"
-                      required
+                      value={fields.name}
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="form-group col-md-6">
@@ -59,7 +106,8 @@ const Contact = () => {
                       className="form-control"
                       name="email"
                       id="email"
-                      required
+                      value={fields.email}
+                      onChange={handleChange}
                     />
                   </div>
                 </div>
@@ -70,7 +118,8 @@ const Contact = () => {
                     className="form-control"
                     name="subject"
                     id="subject"
-                    required
+                    value={fields.subject}
+                    onChange={handleChange}
                   />
                 </div>
                 <div className="form-group">
@@ -79,7 +128,8 @@ const Contact = () => {
                     className="form-control"
                     name="message"
                     rows="10"
-                    required
+                    value={fields.message}
+                    onChange={handleChange}
                   ></textarea>
                 </div>
                 <div className="my-3">
@@ -90,7 +140,11 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="text-center">
-                  <button type="submit">Send Message</button>
+                  <input
+                    value="Send Message"
+                    style={{ cursor: "pointer" }}
+                    type="submit"
+                  />
                 </div>
               </form>
             </div>
