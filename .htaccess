@@ -1,11 +1,16 @@
-<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]
 
-  RewriteEngine On
-  RewriteBase /
-  RewriteRule ^index\.html$ - [L]
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{REQUEST_FILENAME} !-l
-  RewriteRule . /index.html [L]
 
-</IfModule>
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^indyjunkbusters\.com$
+RewriteRule ^/?$ "https\:\/\/www\.indyjunkbusters\.com\/" [R=301,L]
+
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^test\.indyjunkbusters\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.test\.indyjunkbusters\.com$
+RewriteRule ^/?$ "https\:\/\/test\.indyjunkbusters\.com\/" [R=301,L]
