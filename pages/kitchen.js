@@ -32,15 +32,15 @@ const Kitchen = () => {
           <h2>Gallery</h2>
         </div>
         <div className="container gallery">
-          <h3>Kitchen Remodeling</h3>
-          <img id="galeria" src={srcImg} alt="" />
+          <h1>Kitchen Remodeling</h1>
+          <img id="galeria" src={srcImg} alt="Imagen Galeria" />
           <nav>
             <ul>
-            <li><a onClick={()=>setSrc(kitchen2.src)}><img src={kitchen2.src} alt="" /></a></li>
-              <li><a onClick={()=>setSrc(kitchen3.src)}><img src={kitchen3.src} alt="" /></a></li>
-              <li><a onClick={()=>setSrc(kitchen4.src)}><img src={kitchen4.src} alt="" /></a></li>
-              <li><a onClick={()=>setSrc(kitchen5.src)}><img src={kitchen5.src} alt="" /></a></li>
-              <li><a onClick={()=>setSrc(kitchen1.src)}><img src={kitchen1.src} alt="" /></a></li>
+            <li><a onClick={()=>setSrc(kitchen2.src)}><img src={kitchen2.src} alt="Imagen Galeria" /></a></li>
+              <li><a onClick={()=>setSrc(kitchen3.src)}><img src={kitchen3.src} alt="Imagen Galeria" /></a></li>
+              <li><a onClick={()=>setSrc(kitchen4.src)}><img src={kitchen4.src} alt="Imagen Galeria" /></a></li>
+              <li><a onClick={()=>setSrc(kitchen5.src)}><img src={kitchen5.src} alt="Imagen Galeria" /></a></li>
+              <li><a onClick={()=>setSrc(kitchen1.src)}><img src={kitchen1.src} alt="Imagen Galeria" /></a></li>
             </ul>
           </nav>
         </div>

@@ -24,17 +24,17 @@ const Flooring = () => {
           <h2>Gallery</h2>
         </div>
         <div className="container gallery">
-          <h3>Flooring</h3>
-          <img id="galeria" src={srcImg} alt="" />
+          <h1>Flooring</h1>
+          <img id="galeria" src={srcImg} alt="Imagen Galeria" />
           <nav>
             <ul>
-              <li><a onClick={()=>setSrc(flooring2.src)}><img src={flooring2.src} alt="" /></a></li>
-              <li><a onClick={()=>setSrc(flooring3.src)}><img src={flooring3.src} alt="" /></a></li>
-              <li><a onClick={()=>setSrc(flooring4.src)}><img src={flooring4.src} alt="" /></a></li>
-              <li><a onClick={()=>setSrc(flooring5.src)}><img src={flooring5.src} alt="" /></a></li>
-              <li><a onClick={()=>setSrc(flooring6.src)}><img src={flooring6.src} alt="" /></a></li>
-              <li><a onClick={()=>setSrc(flooring7.src)}><img src={flooring7.src} alt="" /></a></li>
-              <li><a onClick={()=>setSrc(flooring1.src)}><img src={flooring1.src} alt="" /></a></li>
+              <li><a onClick={()=>setSrc(flooring2.src)}><img src={flooring2.src} alt="Imagen Galeria" /></a></li>
+              <li><a onClick={()=>setSrc(flooring3.src)}><img src={flooring3.src} alt="Imagen Galeria" /></a></li>
+              <li><a onClick={()=>setSrc(flooring4.src)}><img src={flooring4.src} alt="Imagen Galeria" /></a></li>
+              <li><a onClick={()=>setSrc(flooring5.src)}><img src={flooring5.src} alt="Imagen Galeria" /></a></li>
+              <li><a onClick={()=>setSrc(flooring6.src)}><img src={flooring6.src} alt="Imagen Galeria" /></a></li>
+              <li><a onClick={()=>setSrc(flooring7.src)}><img src={flooring7.src} alt="Imagen Galeria" /></a></li>
+              <li><a onClick={()=>setSrc(flooring1.src)}><img src={flooring1.src} alt="Imagen Galeria" /></a></li>
             </ul>
           </nav>
         </div>

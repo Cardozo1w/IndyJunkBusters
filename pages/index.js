@@ -27,17 +27,17 @@ const Index = () => {
 
           <div className="listado-categorias">
             <div className="categoria">
-              <img src={Junk.src} alt="Imagen Categoría" />
+              <img src={Junk.src} alt="Junk Removal"/>
               <a href="#">Junk Removal</a>
             </div>
 
             <div className="categoria">
-              <img src={interior1.src} alt="Imagen Categoría" />
+              <img src={interior1.src} alt="General Remodeling"/>
               <a href="#">General Remodeling</a>
             </div>
 
             <div className="categoria">
-              <img src={tree.src} alt="Imagen Categoría" />
+              <img src={tree.src} alt="Tree Services" />
               <a href="#">Tree Services</a>
             </div>
           </div>
@@ -71,41 +71,41 @@ const Index = () => {
           <div className="services">
             <ul>
               <p>
-                <i class="bx bx-chevron-right"></i>Junk Removal
+                <i className="bx bx-chevron-right"></i>Junk Removal
               </p>
               <p>
-                <i class="bx bx-chevron-right"></i>Hauling Floor Instalation
+                <i className="bx bx-chevron-right"></i>Hauling Floor Instalation
               </p>
               <p>
-                <i class="bx bx-chevron-right"></i>Vinyl
+                <i className="bx bx-chevron-right"></i>Vinyl
               </p>
               <p>
-                <i class="bx bx-chevron-right"></i>Laminate
-              </p>
-            </ul>
-            <ul>
-              <p>
-                <i class="bx bx-chevron-right"></i>Tile
-              </p>
-              <p>
-                <i class="bx bx-chevron-right"></i>Demolition
-              </p>
-              <p>
-                <i class="bx bx-chevron-right"></i>Remodeling
-              </p>
-              <p>
-                <i class="bx bx-chevron-right"></i>Cleaning
+                <i className="bx bx-chevron-right"></i>Laminate
               </p>
             </ul>
             <ul>
               <p>
-                <i class="bx bx-chevron-right"></i>Residential
+                <i className="bx bx-chevron-right"></i>Tile
               </p>
               <p>
-                <i class="bx bx-chevron-right"></i>Commercial
+                <i className="bx bx-chevron-right"></i>Demolition
               </p>
               <p>
-                <i class="bx bx-chevron-right"></i>Tree Services
+                <i className="bx bx-chevron-right"></i>Remodeling
+              </p>
+              <p>
+                <i className="bx bx-chevron-right"></i>Cleaning
+              </p>
+            </ul>
+            <ul>
+              <p>
+                <i className="bx bx-chevron-right"></i>Residential
+              </p>
+              <p>
+                <i className="bx bx-chevron-right"></i>Commercial
+              </p>
+              <p>
+                <i className="bx bx-chevron-right"></i>Tree Services
               </p>
             </ul>
           </div>

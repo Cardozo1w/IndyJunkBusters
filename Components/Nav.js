@@ -13,13 +13,14 @@ const Navigation = () => {
       </div>
       <header>
         <div className="titulo-principal">
-          <img src={camioneta.src} className="truck" alt="" />
-          <h1 className="nombre-sitio">
+          <img src={camioneta.src} className="truck" alt="Camnioneta Logo" />
+            <a href="/">
             <img
               src={recurso1.src}
               style={{ width: "60%", margin: "0 auto" }}
+              alt="Letras Logo"
             />
-          </h1>
+            </a>
         </div>
       </header>
       <nav id="navbar" className="navbar">
