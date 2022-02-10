@@ -621,11 +621,27 @@ button {
   font-size: 1.6rem;
 }
 
+.services div{
+  text-align: center;
+}
+
+.services p{
+  margin-bottom: 15px;
+}
+
+.services h3{
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.services div p{
+  font-weight: 700;
+}
+
 @media (min-width: 500px) {
   .services {
     display: flex;
     justify-content: space-evenly;
-    padding-left: 150px;
   }
 }
 
@@ -640,7 +656,6 @@ button {
 
 .contenido-principal p {
   font-size: 1.8rem;
-  margin-bottom: 30px;
 }
 
  .gallery h3{

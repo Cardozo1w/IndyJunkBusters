@@ -8,9 +8,11 @@ const Navigation = () => {
 
   return (
     <>
+    <a href="tel:+13176570549">
       <div className="label">
-        Call Us Now!! <i className="fas fa-phone-alt"></i> (317) 657-0549
+        Call Us Now!! <i className="fas fa-phone-alt"></i>+1 (317) 657-0549
       </div>
+      </a>
       <header>
         <div className="titulo-principal">
           <img src={camioneta.src} className="truck" alt="Camnioneta Logo" />

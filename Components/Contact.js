@@ -54,10 +54,8 @@ const Contact = () => {
           <div className="section-title">
             <h2>Contact</h2>
             <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
+              If you want to contact us you can fill out the form or through any
+              of our social networks
             </p>
           </div>
 
@@ -70,17 +68,45 @@ const Contact = () => {
                   <p>Indianapolis, Indiana</p>
                 </div>
 
-                <div className="email">
-                  <i className="bi bi-envelope"></i>
-                  <h4>Email:</h4>
-                  <p>indyjunkbusters@gmail.com</p>
-                </div>
+                <a href="mailto:indyjunkbusters@gmail.com?Subject=More%20information" target="_blank" >
+                  <div className="email">
+                    <i className="bi bi-envelope"></i>
+                    <h4>Email:</h4>
+                    <p>indyjunkbusters@gmail.com</p>
+                  </div>
+                </a>
+
+                <a
+                  href="https://www.instagram.com/indyjunkbusters/?r=nametag"
+                  target="_blank"
+                >
+                  <div className="instagram">
+                    <i className="bi bi-instagram"></i>
+                    <h4>Instagram:</h4>
+                    <p>@indyjunkbusters</p>
+                  </div>
+                </a>
+
+                <a
+                  href="https://www.facebook.com/profile.php?id=100077810167775"
+                  target="_blank"
+                >
+                  <div className="instagram">
+                    <i className="bi bi-facebook"></i>
+                    <h4>Facebook:</h4>
+                    <p>Indy JunkBusters</p>
+                  </div>
+                </a>
 
                 <div className="phone">
                   <i className="bi bi-phone"></i>
                   <h4>Call:</h4>
+                  <a href="tel:+13176570549">
                   <p style={{ marginBottom: 0 }}>+1 (317) 657-0549</p>
+                  </a>
+                  <a href="tel:+13179929992">
                   <p>+1 (317) 992-9992</p>
+                  </a>
                 </div>
               </div>
             </div>

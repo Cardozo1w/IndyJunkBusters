@@ -5,7 +5,7 @@ import Junk from "../img/junk2.webp";
 import interior1 from "../img/interior1.webp";
 import tree from "../img/tree.webp";
 import Contact from "../Components/Contact";
-import Hero from '../Components/Hero'
+import Hero from "../Components/Hero";
 
 const Index = () => {
   return (
@@ -27,12 +27,12 @@ const Index = () => {
 
           <div className="listado-categorias">
             <div className="categoria">
-              <img src={Junk.src} alt="Junk Removal"/>
+              <img src={Junk.src} alt="Junk Removal" />
               <a href="#">Junk Removal</a>
             </div>
 
             <div className="categoria">
-              <img src={interior1.src} alt="General Remodeling"/>
+              <img src={interior1.src} alt="General Remodeling" />
               <a href="#">General Remodeling</a>
             </div>
 
@@ -62,14 +62,38 @@ const Index = () => {
           <div className="section-title">
             <h2>Our Services</h2>
           </div>
-          <p className="text-center">
+          <p className="text-center mb-5">
             We provide professional services to remove unwanted items from your
             property, this will save you a lot of time, since we will take care
             of everything from removing all the garbage to disposing of it in
             the right place.
           </p>
           <div className="services">
-            <ul>
+            <div>
+              <h3>Junk</h3>
+              <p>Junk Removal/ Hauling</p>
+              <p>Appliance Removal/Hauling</p>
+              <p>Carpet Removal</p>
+              <p>Refrigerator Removal</p>
+              <p>Furniture Removal</p>
+              <p>Hot Tub Removal</p>
+              <p>Mattress Removal</p>
+              <p>Construction Debris Removal</p>
+            </div>
+            <div>
+              <h3>Cleanout</h3>
+              <p>Garage Cleanout Service</p>
+              <p>Basement Cleanout Service</p>
+              <p>Attic Cleanout Service</p>
+              <p>Office Cleanout Service</p>
+              <p>Storage Unit Cleanout Service</p>
+            </div>
+            <div>
+              <h3>Demolition</h3>
+              <p>Fence & Deck Removal Services</p>
+              <p>Storage Shed & Barn Demolition</p>
+              </div>
+            {/* <ul>
               <p>
                 <i className="bx bx-chevron-right"></i>Junk Removal
               </p>
@@ -107,11 +131,11 @@ const Index = () => {
               <p>
                 <i className="bx bx-chevron-right"></i>Tree Services
               </p>
-            </ul>
+            </ul> */}
           </div>
         </main>
 
-        <Contact/>
+        <Contact />
       </Layout>
     </>
   );
