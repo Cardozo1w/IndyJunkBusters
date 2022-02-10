@@ -299,6 +299,7 @@ button {
   display: block;
   padding: 2rem;
   font-size: 2rem;
+  color: #d94436;
 }
 .categoria a:hover {
   background-color: #d94436;
