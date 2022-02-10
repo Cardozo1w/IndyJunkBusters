@@ -92,6 +92,8 @@ const Index = () => {
               <h3>Demolition</h3>
               <p>Fence & Deck Removal Services</p>
               <p>Storage Shed & Barn Demolition</p>
+              <p>Bathroom Demolition</p>
+               <p>Kitchen Demolition</p>
               </div>
             {/* <ul>
               <p>
