@@ -663,6 +663,11 @@ button {
   text-align: center;
 }
 
+.gallery h3{
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
 
 #galeria {
   max-width: 900px;
