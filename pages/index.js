@@ -16,6 +16,7 @@ const Index = () => {
           href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
           rel="stylesheet"
         />
+        <meta name="descripción" content="Best Junk Removers"/>
       </Head>
 
       <Layout>

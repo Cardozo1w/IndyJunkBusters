@@ -49,7 +49,7 @@ const Contact = () => {
         </Modal.Footer>
       </Modal>
 
-      <section id="contact" className="contact" id="contact">
+      <section id="contact" className="contact">
         <div className="container">
           <div className="section-title">
             <h2>Contact</h2>
